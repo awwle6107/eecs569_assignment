@@ -18,6 +18,7 @@
 //macro to index into vector at location (i,j)
 #define index(i,j,rowsize) i*rowsize+j
 
+//added a randomizeVector function, this function taken from the dot product code
 void randomizeVector(float range, int N, float * vector){
 	//uniform randomly initialize values in array between -range and +range
 	for(int i = 0; i < N; i++)
@@ -69,11 +70,12 @@ int main(int argc, char *argv[])
 	float * vecB;
 	float * vecC;
 	
+	//matA stays the same but for vecB an N is removed
 	matA = malloc(N*N*sizeof(float));
 	vecB = malloc(N*sizeof(float));
 	vecC = calloc(N,sizeof(float));
 	
-	//randomize A and B
+	//randomize A and B ----- randomizeMatrix called for a and randomizeVector called for B
 	randomizeMatrix(R_CONST,N,matA);
 	randomizeVector(R_CONST,N,vecB);
 	
@@ -81,6 +83,8 @@ int main(int argc, char *argv[])
 	double time;
 	time = omp_get_wtime();
 	
+	//for the matrix-vector product, the innner most loop was removed, each vecC element is calculated for each i
+
 	//do matrix-vector product
 	for (i = 0; i < N; i++){
 		for (j = 0; j < N; j++)
@@ -90,9 +94,9 @@ int main(int argc, char *argv[])
 	//calculate elapsed time for dot product
 	time = omp_get_wtime() - time;
 
-	printMatrix(matA, N);
-	printVector(vecB, N);
-	printVector(vecC,N);
+	//printMatrix(matA, N);
+	//printVector(vecB, N);
+	//printVector(vecC,N);
 
 	
 	//calculate metrics 

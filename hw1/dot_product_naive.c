@@ -6,6 +6,8 @@
 #include <math.h>
 #include <omp.h>
 
+//MAIN CHANGES: changes all references of matrix to vector, all index values were changed to [i]
+
 //comment to silence statistics of performance 
 #define VERBOSE
 
@@ -15,9 +17,10 @@
 //range of random numbers
 #define R_CONST 100
 
-//macro to index into vector at location (i,j)
+//macro to index into vector at location (i,j)  - didn't need for vectors
 //#define index(i,j,rowsize) i*rowsize+j
 
+// randomize was changed by removing the second for loop
 void randomizeVector(float range, int N, float * vector){
 	//uniform randomly initialize values in array between -range and +range
 	for(int i = 0; i < N; i++)
@@ -46,11 +49,12 @@ int main(int argc, char *argv[])
 	srand(time(NULL)); //seed the RNG
 	//srand(1);
 	
-	//initialize memory 
+	//initialize memory
 	float * vecA;
 	float * vecB;
 	float C = 0.0;
 	
+	//removed an N for each of the vector mallocs
 	vecA = malloc(N*sizeof(float));
 	vecB = malloc(N*sizeof(float));
 	//matC = calloc(N*N,sizeof(float));
@@ -63,6 +67,8 @@ int main(int argc, char *argv[])
 	double time;
 	time = omp_get_wtime();
 	
+	//dot product removed the two inner for loops, just needed the single outer loop, C is updated each cycle
+
 	//do dot product
 	for (i = 0; i < N; i++){
 				C += vecA[i]*vecB[i];
@@ -75,7 +81,7 @@ int main(int argc, char *argv[])
 	//printVector(vecB, N);
 
 	
-	//calculate metrics 
+	//calculate metrics ---- FLOP equation updated to 2*N-1
 	long FLOP = 2*N-1; 
 	double Flops = FLOP/time;
 	
