@@ -30,6 +30,7 @@ void randomizeMatrix(float range, int N, float * matrix){
 		}
 }
 
+// a function to transpose a matrix
 void transpose(float * matrix, float * matrix_t, int N){
 	for(int i = 0; i < N; i++){
 		for(int j = 0; j < N; j++){
@@ -38,6 +39,7 @@ void transpose(float * matrix, float * matrix_t, int N){
 	}
 }
 
+// a function to print a matrix
 void print_matrix(float * matrix, int N){
 	for (int i = 0; i < N; i++){
 		for (int j = 0; j < N; j++){
@@ -80,6 +82,7 @@ int main(int argc, char *argv[])
 	double time;
 	time = omp_get_wtime();
 	
+	// transpose the matB and store the transposed matrix at matB_T
     transpose(matB, matB_T, N);
 	//do matrix multiply
 	for (i = 0; i < N; i++){

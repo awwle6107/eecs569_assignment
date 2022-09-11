@@ -74,6 +74,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < N; i++){
 		for (k = 0; k < N; k++){
 			for (j = 0; j < N; j++)
+			// change the loop order
 				matC[index(i,j,N)] += matA[index(i,k,N)]*matB[index(k,j,N)];
 		}
 	}
