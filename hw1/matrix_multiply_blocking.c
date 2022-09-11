@@ -28,7 +28,7 @@ void randomizeMatrix(float range, int N, float * matrix){
 			matrix[index(i,j,N)] = (((float)rand()/(float)RAND_MAX) * 2 * range) - range;
 		}
 }
-
+// this function do a blocking multiplication, it takes in the block size as B
 void blocking_multiplication(float *matA, float *matB , float *matC, int N, int B)
 {
     int i, j, k, ii, jj, kk;
@@ -74,6 +74,7 @@ int main(int argc, char *argv[])
 	}else{
 		//get size of matrix 
 		N = atoi(argv[1]);
+		//get size of block
         block = atoi(argv[2]);
 	}
 	
@@ -104,6 +105,8 @@ int main(int argc, char *argv[])
 	// 		matC[index(i,j,N)] = val;
 	// 	}
 	// }
+
+	// do a blocking multiplication on matA and matB and store the result in matC
     blocking_multiplication(matA, matB, matC, N, block);
 	
 	//calculate elapsed time for matrix multiply
