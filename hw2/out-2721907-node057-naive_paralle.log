@@ -1,0 +1,231 @@
+
+Currently Loaded Modules:
+  1) shared   2) slurm/RT_SLURM/19.05.7   3) DefaultModules   4) gcc/5.5.0
+
+ 
+
+Performed a 4096 x 4096 matrix multiply in 988.609075 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 139.02
+OMP_NUM_THREADS: 1
+
+Performed a 4096 x 4096 matrix multiply in 988.449009 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 139.05
+OMP_NUM_THREADS: 1
+
+Performed a 4096 x 4096 matrix multiply in 1056.261103 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 130.12
+OMP_NUM_THREADS: 1
+
+Performed a 4096 x 4096 matrix multiply in 1045.784317 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 131.42
+OMP_NUM_THREADS: 1
+
+Performed a 4096 x 4096 matrix multiply in 957.476752 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 143.54
+OMP_NUM_THREADS: 1
+
+Performed a 4096 x 4096 matrix multiply in 817.331012 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 168.16
+OMP_NUM_THREADS: 2
+
+Performed a 4096 x 4096 matrix multiply in 818.597005 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 167.90
+OMP_NUM_THREADS: 2
+
+Performed a 4096 x 4096 matrix multiply in 612.929738 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 224.23
+OMP_NUM_THREADS: 2
+
+Performed a 4096 x 4096 matrix multiply in 618.717075 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 222.14
+OMP_NUM_THREADS: 2
+
+Performed a 4096 x 4096 matrix multiply in 546.283938 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 251.59
+OMP_NUM_THREADS: 2
+
+Performed a 4096 x 4096 matrix multiply in 309.301162 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 444.35
+OMP_NUM_THREADS: 4
+
+Performed a 4096 x 4096 matrix multiply in 322.551356 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 426.10
+OMP_NUM_THREADS: 4
+
+Performed a 4096 x 4096 matrix multiply in 324.870168 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 423.06
+OMP_NUM_THREADS: 4
+
+Performed a 4096 x 4096 matrix multiply in 335.140631 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 410.09
+OMP_NUM_THREADS: 4
+
+Performed a 4096 x 4096 matrix multiply in 342.402554 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 401.40
+OMP_NUM_THREADS: 4
+
+Performed a 4096 x 4096 matrix multiply in 180.318794 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 762.20
+OMP_NUM_THREADS: 8
+
+Performed a 4096 x 4096 matrix multiply in 177.727184 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 773.31
+OMP_NUM_THREADS: 8
+
+Performed a 4096 x 4096 matrix multiply in 168.464118 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 815.84
+OMP_NUM_THREADS: 8
+
+Performed a 4096 x 4096 matrix multiply in 176.474238 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 778.80
+OMP_NUM_THREADS: 8
+
+Performed a 4096 x 4096 matrix multiply in 177.093923 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 776.08
+OMP_NUM_THREADS: 8
+
+Performed a 4096 x 4096 matrix multiply in 95.058040 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 1445.84
+OMP_NUM_THREADS: 16
+
+Performed a 4096 x 4096 matrix multiply in 94.247152 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 1458.28
+OMP_NUM_THREADS: 16
+
+Performed a 4096 x 4096 matrix multiply in 93.272782 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 1473.52
+OMP_NUM_THREADS: 16
+
+Performed a 4096 x 4096 matrix multiply in 94.747362 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 1450.58
+OMP_NUM_THREADS: 16
+
+Performed a 4096 x 4096 matrix multiply in 93.716443 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 1466.54
+OMP_NUM_THREADS: 16
+
+Performed a 4096 x 4096 matrix multiply in 49.166618 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2795.37
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 49.747233 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2762.75
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 48.533944 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2831.81
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 49.913701 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2753.53
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 49.685694 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2766.17
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 48.908615 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2810.12
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 49.106745 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2798.78
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 50.222553 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2736.60
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 47.619594 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2886.18
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 49.908250 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2753.83
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 49.279317 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2788.98
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 50.183584 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2738.72
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 47.069097 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2919.94
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 48.029767 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2861.54
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 49.253684 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2790.43
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 50.368804 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2728.65
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 49.063956 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2801.22
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 48.794723 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2816.68
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 47.655578 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2884.01
+OMP_NUM_THREADS: 32
+
+Performed a 4096 x 4096 matrix multiply in 48.900337 seconds
+Number of floating point operations = 2 * 4096^3 = 137438953472
+MFlops = 2810.59
+OMP_NUM_THREADS: 32
+

@@ -19,27 +19,9 @@
 //macro to index into matrix at location (i,j)
 #define index(i,j,rowsize) i*rowsize+j
 
-void randomizeMatrix(float range, int N, float * matrix){
-	//uniform randomly initialize values in array between -range and +range
-	for(int i = 0; i < N; i++)
-		for(int j = 0; j < N; j++){
-			matrix[index(i,j,N)] = (((float)rand()/(float)RAND_MAX) * 2 * range) - range;
-		}
-}
-
-void print_matrix(float * matrix, int N){
-	for (int i = 0; i < N; i++){
-		for (int j = 0; j < N; j++){
-			printf("%0.2f ", matrix[index(i, j, N)]);
-		}
-		printf("\n");
-	}
-	printf("\n");
-}
-
 int main(int argc, char *argv[])
 { 
-	int N,T;
+	int i,j,k,N,T;
 	
 	if(argc < 3){
 		printf("Not enough arguments, defaulting to N=%d. Usage: [N] [T] [(optional) data_filename]\n",MSIZE);
@@ -51,53 +33,34 @@ int main(int argc, char *argv[])
 		T = atoi(argv[2]);
 	}
 	
-	//srand(time(NULL)); //seed the RNG
-	srand(10);
-	//initialize memory 
-	float * matA;
-	float * matB;
-	float * matC;
+	srand(time(NULL)); //seed the RNG
 	
-	matA = malloc(N*N*sizeof(float));
-	matB = malloc(N*N*sizeof(float));
-	matC = calloc(N*N,sizeof(float));
+	//initialize memory 
+	float matA[N][N];
+	float matB[N][N];
+	float matC[N][N];
+	
+	memset(matC, 0, sizeof(matC));
 	
 	//randomize A and B
-	randomizeMatrix(R_CONST,N,matA);
-	randomizeMatrix(R_CONST,N,matB);
+	for(int i = 0; i < N; i++)
+		for(int j = 0; j < N; j++){
+			matA[i][j] = (((float)rand()/(float)RAND_MAX) * 2 * R_CONST) - R_CONST;
+			matB[i][j] = (((float)rand()/(float)RAND_MAX) * 2 * R_CONST) - R_CONST;
+		}
 	
 	//get start time 
 	double time;
 	time = omp_get_wtime();
 
-	// //do matrix multiply
-	// for(int ii = 0; ii < N; ii += T){
-	// 	for(int kk = 0; kk < N; kk += T){
-	// 		for(int jj = 0; jj < N; jj += T){
-	// 			for(int i = ii; i < ii + T; i++){
-	// 				for(int k = kk; k < kk + T; k++){
-	// 					for(int j = jj; j < jj + T; j++){
-	// 						matC[index(i,j,N)] += matA[index(i,k,N)]*matB[index(k,j,N)];
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
-	
-	// printf("non parallel:\n");
-	// print_matrix(matC, N);
-	// matC = calloc(N*N,sizeof(float));
-
-	
+	//do matrix multiply
 	for(int ii = 0; ii < N; ii += T){
 		for(int kk = 0; kk < N; kk += T){
 			for(int jj = 0; jj < N; jj += T){
-				#pragma omp parallel for
 				for(int i = ii; i < ii + T; i++){
 					for(int k = kk; k < kk + T; k++){
 						for(int j = jj; j < jj + T; j++){
-							matC[index(i,j,N)] += matA[index(i,k,N)]*matB[index(k,j,N)];
+							matC[i][j] += matA[i][k]*matB[k][j];
 						}
 					}
 				}
@@ -105,14 +68,9 @@ int main(int argc, char *argv[])
 		}
 	}
 	
-
-	// printf("parallel:\n");
-	// print_matrix(matC, N);
 	//calculate elapsed time for matrix multiply
 	time = omp_get_wtime() - time;
-	// get the num of threads from enviroment
-	char* OMP_NUM_THREADS = getenv("OMP_NUM_THREADS");
-	printf("OMP_NUM_THREADS: %s\n\n", OMP_NUM_THREADS );
+	
 	//calculate metrics 
 	long FLOP = 2 * pow(N,3); 
 	double Flops = FLOP/time;
@@ -132,20 +90,16 @@ int main(int argc, char *argv[])
 		if(!csv_file){
 			//not created, reopen file as write, write column headers
 			csv_file = fopen(argv[3],"w");
-			fprintf(csv_file, "N,FLOP,Flops,s,B,T\n");
+			fprintf(csv_file, "N,Flops,s\n");
 		}
 		fclose(csv_file); //close outside brackets in case the fopen in read worked
 		
 		// file is created from here onward, open in append mode and add the data 
 		csv_file = fopen(argv[3],"a");
-		fprintf(csv_file, "%d,%ld,%e,%lf,%d,%s\n",N,FLOP,Flops,time,T,OMP_NUM_THREADS);
+		fprintf(csv_file, "%d,%e,%lf\n",N,FLOP,Flops,time);
 		fclose(csv_file);
 	}
 	
-	//free memory
-	free(matA);
-	free(matB);
-	free(matC);
 	
 	return 0;
 	
