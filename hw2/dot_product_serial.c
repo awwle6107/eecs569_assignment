@@ -52,18 +52,41 @@ int main(int argc, char *argv[])
 	double time;
 	time = omp_get_wtime();
 	
-	//do dot-product
-	for (i = 0; i < N; i++){
-		vecb[i] += vecy[i]*vecx[i];
+	// //do dot-product
+	// for (i = 0; i < N; i++){
+	// 	vecb[i] += vecy[i]*vecx[i];
+	// }
+
+	// for(i=0; i < N; i++){
+	// 	printf("%.2f ", vecb[i]);
+	// }
+	// printf("\n");
+
+	// vecb = calloc(N  ,sizeof(float));
+	#pragma omp parallel
+	{
+		int j;
+		#pragma omp for
+		for(j=0; j<N; j++){
+			vecb[j] += vecy[j]*vecx[j];
+		}
 	}
-	
+
+	// for(i=0; i < N; i++){
+	// 	printf("%.2f ", vecb[i]);
+	// }
+	// printf("\n");
 	//calculate elapsed time for matrix multiply
 	time = omp_get_wtime() - time;
 	
 	//calculate metrics 
 	long FLOP = N - 1; 
 	double Flops = FLOP/time;
-	
+
+	// get the num of threads from enviroment
+	char* OMP_NUM_THREADS = getenv("OMP_NUM_THREADS");
+	printf("OMP_NUM_THREADS: %s\n\n", OMP_NUM_THREADS );
+
 	#ifdef VERBOSE //by default not included 
 	printf("Performed a %d dot-product in %f seconds\n", N, N, time);
 	printf("Number of floating point operations = 2 * %d^3 = %ld\n", N, FLOP);
@@ -79,13 +102,13 @@ int main(int argc, char *argv[])
 		if(!csv_file){
 			//not created, reopen file as write, write column headers
 			csv_file = fopen(argv[2],"w");
-			fprintf(csv_file, "N,Flops,s\n");
+			fprintf(csv_file, "N,FLOP,Flops,s,T\n");
 		}
 		fclose(csv_file); //close outside brackets in case the fopen in read worked
 		
 		// file is created from here onward, open in append mode and add the data 
 		csv_file = fopen(argv[2],"a");
-		fprintf(csv_file, "%d,%e,%lf\n",N,FLOP,Flops,time);
+		fprintf(csv_file, "%d,%ld,%e,%lf,%s\n",N,FLOP,Flops,time,OMP_NUM_THREADS);
 		fclose(csv_file);
 	}
 	

@@ -1,0 +1,231 @@
+
+Currently Loaded Modules:
+  1) shared   2) slurm/RT_SLURM/19.05.7   3) DefaultModules   4) gcc/5.5.0
+
+ 
+
+OMP_NUM_THREADS: 1
+
+Performed a 1073741824 dot-product in 4.894029 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 219.40
+OMP_NUM_THREADS: 1
+
+Performed a 1073741824 dot-product in 3.937342 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 272.71
+OMP_NUM_THREADS: 1
+
+Performed a 1073741824 dot-product in 4.246375 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 252.86
+OMP_NUM_THREADS: 1
+
+Performed a 1073741824 dot-product in 4.562262 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 235.35
+OMP_NUM_THREADS: 1
+
+Performed a 1073741824 dot-product in 4.141947 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 259.24
+OMP_NUM_THREADS: 2
+
+Performed a 1073741824 dot-product in 2.566974 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 418.29
+OMP_NUM_THREADS: 2
+
+Performed a 1073741824 dot-product in 2.398554 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 447.66
+OMP_NUM_THREADS: 2
+
+Performed a 1073741824 dot-product in 2.691029 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 399.01
+OMP_NUM_THREADS: 2
+
+Performed a 1073741824 dot-product in 2.494014 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 430.53
+OMP_NUM_THREADS: 2
+
+Performed a 1073741824 dot-product in 2.451883 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 437.93
+OMP_NUM_THREADS: 4
+
+Performed a 1073741824 dot-product in 1.331114 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 806.65
+OMP_NUM_THREADS: 4
+
+Performed a 1073741824 dot-product in 1.393772 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 770.39
+OMP_NUM_THREADS: 4
+
+Performed a 1073741824 dot-product in 1.519107 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 706.82
+OMP_NUM_THREADS: 4
+
+Performed a 1073741824 dot-product in 1.345392 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 798.09
+OMP_NUM_THREADS: 4
+
+Performed a 1073741824 dot-product in 1.279561 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 839.15
+OMP_NUM_THREADS: 8
+
+Performed a 1073741824 dot-product in 0.761855 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 1409.38
+OMP_NUM_THREADS: 8
+
+Performed a 1073741824 dot-product in 0.743589 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 1444.00
+OMP_NUM_THREADS: 8
+
+Performed a 1073741824 dot-product in 0.751442 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 1428.91
+OMP_NUM_THREADS: 8
+
+Performed a 1073741824 dot-product in 0.754485 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 1423.15
+OMP_NUM_THREADS: 8
+
+Performed a 1073741824 dot-product in 0.775697 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 1384.23
+OMP_NUM_THREADS: 16
+
+Performed a 1073741824 dot-product in 0.419642 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 2558.71
+OMP_NUM_THREADS: 16
+
+Performed a 1073741824 dot-product in 0.433563 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 2476.56
+OMP_NUM_THREADS: 16
+
+Performed a 1073741824 dot-product in 0.415081 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 2586.82
+OMP_NUM_THREADS: 16
+
+Performed a 1073741824 dot-product in 0.419557 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 2559.23
+OMP_NUM_THREADS: 16
+
+Performed a 1073741824 dot-product in 0.403572 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 2660.60
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.298305 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3599.48
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.271841 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3949.89
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.263910 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 4068.58
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.279054 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3847.80
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.298952 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3591.68
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.264062 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 4066.24
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.251016 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 4277.58
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.293102 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3663.38
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.312792 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3432.77
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.241385 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 4448.25
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.291772 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3680.07
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.264596 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 4058.04
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.310113 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3462.42
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.240193 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 4470.33
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.309801 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3465.91
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.312441 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3436.62
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.278958 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3849.12
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.302825 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3545.75
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.277701 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3866.54
+OMP_NUM_THREADS: 32
+
+Performed a 1073741824 dot-product in 0.281101 seconds
+Number of floating point operations = 2 * 1073741824^3 = 1073741823
+MFlops = 3819.78

@@ -1,0 +1,231 @@
+
+Currently Loaded Modules:
+  1) shared   2) slurm/RT_SLURM/19.05.7   3) DefaultModules   4) gcc/5.5.0
+
+ 
+
+OMP_NUM_THREADS: 1
+
+Performed a 32768 x 32768 matrix-vector product in 4.794156 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 447.93
+OMP_NUM_THREADS: 1
+
+Performed a 32768 x 32768 matrix-vector product in 4.357600 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 492.81
+OMP_NUM_THREADS: 1
+
+Performed a 32768 x 32768 matrix-vector product in 4.115910 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 521.74
+OMP_NUM_THREADS: 1
+
+Performed a 32768 x 32768 matrix-vector product in 4.076548 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 526.78
+OMP_NUM_THREADS: 1
+
+Performed a 32768 x 32768 matrix-vector product in 4.357728 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 492.79
+OMP_NUM_THREADS: 2
+
+Performed a 32768 x 32768 matrix-vector product in 2.376382 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 903.66
+OMP_NUM_THREADS: 2
+
+Performed a 32768 x 32768 matrix-vector product in 2.329032 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 922.04
+OMP_NUM_THREADS: 2
+
+Performed a 32768 x 32768 matrix-vector product in 2.178664 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 985.67
+OMP_NUM_THREADS: 2
+
+Performed a 32768 x 32768 matrix-vector product in 2.435709 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 881.65
+OMP_NUM_THREADS: 2
+
+Performed a 32768 x 32768 matrix-vector product in 2.414933 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 889.24
+OMP_NUM_THREADS: 4
+
+Performed a 32768 x 32768 matrix-vector product in 1.184857 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 1812.41
+OMP_NUM_THREADS: 4
+
+Performed a 32768 x 32768 matrix-vector product in 1.361455 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 1577.32
+OMP_NUM_THREADS: 4
+
+Performed a 32768 x 32768 matrix-vector product in 1.222063 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 1757.23
+OMP_NUM_THREADS: 4
+
+Performed a 32768 x 32768 matrix-vector product in 1.371601 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 1565.65
+OMP_NUM_THREADS: 4
+
+Performed a 32768 x 32768 matrix-vector product in 1.343968 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 1597.84
+OMP_NUM_THREADS: 8
+
+Performed a 32768 x 32768 matrix-vector product in 0.802055 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 2677.44
+OMP_NUM_THREADS: 8
+
+Performed a 32768 x 32768 matrix-vector product in 0.720377 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 2981.01
+OMP_NUM_THREADS: 8
+
+Performed a 32768 x 32768 matrix-vector product in 0.700200 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 3066.91
+OMP_NUM_THREADS: 8
+
+Performed a 32768 x 32768 matrix-vector product in 0.733105 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 2929.25
+OMP_NUM_THREADS: 8
+
+Performed a 32768 x 32768 matrix-vector product in 0.791919 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 2711.71
+OMP_NUM_THREADS: 16
+
+Performed a 32768 x 32768 matrix-vector product in 0.445723 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 4817.90
+OMP_NUM_THREADS: 16
+
+Performed a 32768 x 32768 matrix-vector product in 0.441936 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 4859.19
+OMP_NUM_THREADS: 16
+
+Performed a 32768 x 32768 matrix-vector product in 0.437316 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 4910.52
+OMP_NUM_THREADS: 16
+
+Performed a 32768 x 32768 matrix-vector product in 0.440960 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 4869.94
+OMP_NUM_THREADS: 16
+
+Performed a 32768 x 32768 matrix-vector product in 0.419959 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 5113.48
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.262446 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 8182.44
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.309427 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 6940.08
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.268470 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7998.86
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.284926 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7536.87
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.249950 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 8591.51
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.244887 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 8769.17
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.270653 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7934.33
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.252826 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 8493.80
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.273054 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7864.58
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.305877 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7020.65
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.285441 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7523.26
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.257453 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 8341.14
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.246623 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 8707.41
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.253097 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 8484.69
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.231576 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 9273.19
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.294932 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7281.18
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.271139 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7920.10
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.283834 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7565.86
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.290953 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 7380.74
+OMP_NUM_THREADS: 32
+
+Performed a 32768 x 32768 matrix-vector product in 0.231047 seconds
+Number of floating point operations = 2 * 32768^3 = 2147450880
+MFlops = 9294.43
