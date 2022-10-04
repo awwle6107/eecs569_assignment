@@ -29,6 +29,27 @@ void print_matrix(int N, float matrix[][N]){
 	printf("\n");
 }
 
+void matmatmul(int N, int T, float A[][N], float B[][N], float C[][N])
+{
+	int i, j, k, ii, jj, kk;
+	for(i = 0; i < N; i += T){
+		for(j = 0; j < N; j +=T){
+			for(k=0; k<N; k+=T){
+				#pragma omp task private(ii, jj, kk) \
+						depend(in: A[i:T][k:T], B[k:T][j:T]) \
+						depend(inout: C[i:T][j:T])
+				for(ii=i; ii<i+T; ii++){
+					for(jj=j; jj<j+T; jj++){
+						for(kk=k; kk<k+T; kk++){
+							C[ii][jj] = C[ii][jj] + A[ii][kk]*B[kk][jj];
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 int main(int argc, char *argv[])
 { 
 	int i,j,k,N,T;
@@ -63,7 +84,7 @@ int main(int argc, char *argv[])
 	double time;
 	time = omp_get_wtime();
 
-	// //do matrix multiply
+	// // do matrix multiply
 	// for(int ii = 0; ii < N; ii += T){
 	// 	for(int kk = 0; kk < N; kk += T){
 	// 		for(int jj = 0; jj < N; jj += T){
@@ -80,28 +101,19 @@ int main(int argc, char *argv[])
 
 	// printf("non parallel:\n");
 	// print_matrix(N, matC);
+	// memset(matC, 0, sizeof(matC));
 
-	//do matrix multiply
-	// source: http://homepages.math.uic.edu/~jan/mcs572/openmptasking.pdf
-	int ii,jj,kk;
-	for(i = 0; i < N; i += T){
-		for(j = 0; j < N; j +=T){
-			for(k=0; k<N; k+=T){
-				#pragma omp task private(ii, jj, kk) \
-						depend(in: matA[i:T][k:T], matB[k:T][j:T]) \
-						depend(inout: matC[i:T][j:T])
-				for(ii=i; ii<i+T; ii++){
-					for(jj=j; jj<j+T; jj++){
-						for(kk=k; kk<k+T; kk++){
-							matC[ii][jj] = matC[ii][jj] + matA[ii][kk]*matB[kk][jj];
-						}
-					}
-				}
-			}
-		}
-	}
+
 	// printf("parallel:\n");
 	// print_matrix(N, matC);
+	//do matrix multiply
+	// source: http://homepages.math.uic.edu/~jan/mcs572/openmptasking.pdf
+	#pragma omp parallel
+	#pragma omp single
+	matmatmul(N, T, matA, matB, matC);
+	// printf("parallel:\n");
+	// print_matrix(N, matC);
+	
 	//calculate elapsed time for matrix multiply
 	time = omp_get_wtime() - time;
 	// get the num of threads from enviroment
