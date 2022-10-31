@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#SBATCH --job-name=mpi_file_write  # Job name
+#SBATCH --partition=quickq      # Partition/Queue
+#SBATCH --nodes=2               # Number of nodes
+#SBATCH --ntasks-per-node=32     # CPUs per node (MAX=40 for compute nodes, 80 for GPU, 72 for quickq)
+#SBATCH --time=12:00:00          # Maximum walltime of 1 hour (can ask for 12 hours for quickq if needed)
+#SBATCH --output=mpi_file_write-out-%j-%N.log  # Standard output (log file)
+
+#everything under here is as if you typed it into your command line, but with the dedicated resources asked for above
+
+# load any modules you need here
+module load openmpi
+module list
+
+# run your program(s) here 
+
+for P in 2 4 8 16 32 64
+do
+    for i in {1..5}
+    do
+        mpirun -np $P mpi_write mpi_write.out 2500000000 mpi_write.csv
+    done
+done    
+
