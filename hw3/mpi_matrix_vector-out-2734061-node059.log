@@ -1,0 +1,157 @@
+
+Currently Loaded Modules:
+  1) shared                   3) DefaultModules   5) openmpi/4.0.2
+  2) slurm/RT_SLURM/19.05.7   4) gcc/5.5.0
+
+ 
+
+Performed a 4096 x 4096 matrix multiply in 0.07957 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 4.217e+08
+Performed a 4096 x 4096 matrix multiply in 0.07947 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 4.222e+08
+Performed a 4096 x 4096 matrix multiply in 0.07924 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 4.234e+08
+Performed a 4096 x 4096 matrix multiply in 0.07930 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 4.231e+08
+Performed a 4096 x 4096 matrix multiply in 0.07951 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 4.220e+08
+Performed a 4096 x 4096 matrix multiply in 0.05645 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 5.944e+08
+Performed a 4096 x 4096 matrix multiply in 0.05565 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 6.029e+08
+Performed a 4096 x 4096 matrix multiply in 0.05501 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 6.099e+08
+Performed a 4096 x 4096 matrix multiply in 0.05625 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 5.965e+08
+Performed a 4096 x 4096 matrix multiply in 0.05598 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 5.993e+08
+Performed a 4096 x 4096 matrix multiply in 0.04796 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 6.995e+08
+Performed a 4096 x 4096 matrix multiply in 0.04557 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 7.362e+08
+Performed a 4096 x 4096 matrix multiply in 0.04514 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 7.432e+08
+Performed a 4096 x 4096 matrix multiply in 0.04462 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 7.519e+08
+Performed a 4096 x 4096 matrix multiply in 0.04503 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 7.450e+08
+Performed a 4096 x 4096 matrix multiply in 0.04443 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 7.552e+08
+Performed a 4096 x 4096 matrix multiply in 0.04981 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 6.736e+08
+Performed a 4096 x 4096 matrix multiply in 0.04222 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 7.947e+08
+Performed a 4096 x 4096 matrix multiply in 0.04426 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 7.580e+08
+Performed a 4096 x 4096 matrix multiply in 0.05210 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 6.440e+08
+Performed a 4096 x 4096 matrix multiply in 0.04010 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 8.368e+08
+Performed a 4096 x 4096 matrix multiply in 0.03678 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 9.123e+08
+Performed a 4096 x 4096 matrix multiply in 0.04004 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 8.379e+08
+Performed a 4096 x 4096 matrix multiply in 0.03671 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 9.139e+08
+Performed a 4096 x 4096 matrix multiply in 0.03397 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 9.877e+08
+Performed a 4096 x 4096 matrix multiply in 0.06397 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 5.245e+08
+Performed a 4096 x 4096 matrix multiply in 0.06374 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 5.264e+08
+Performed a 4096 x 4096 matrix multiply in 0.06459 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 5.194e+08
+Performed a 4096 x 4096 matrix multiply in 0.05567 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 6.027e+08
+Performed a 4096 x 4096 matrix multiply in 0.06167 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 5.440e+08
+Performed a 4096 x 4096 matrix multiply in 0.22184 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.512e+08
+Performed a 4096 x 4096 matrix multiply in 0.22714 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.477e+08
+Performed a 4096 x 4096 matrix multiply in 0.21997 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.525e+08
+Performed a 4096 x 4096 matrix multiply in 0.22472 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.493e+08
+Performed a 4096 x 4096 matrix multiply in 0.21930 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.530e+08
+Performed a 4096 x 4096 matrix multiply in 0.23045 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.456e+08
+Performed a 4096 x 4096 matrix multiply in 0.22830 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.470e+08
+Performed a 4096 x 4096 matrix multiply in 0.23198 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.446e+08
+Performed a 4096 x 4096 matrix multiply in 0.21920 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.531e+08
+Performed a 4096 x 4096 matrix multiply in 0.22049 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.522e+08
+Performed a 4096 x 4096 matrix multiply in 0.21907 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.531e+08
+Performed a 4096 x 4096 matrix multiply in 0.21647 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.550e+08
+Performed a 4096 x 4096 matrix multiply in 0.22990 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.459e+08
+Performed a 4096 x 4096 matrix multiply in 0.22690 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.479e+08
+Performed a 4096 x 4096 matrix multiply in 0.22561 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.487e+08
+Performed a 4096 x 4096 matrix multiply in 0.21785 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.540e+08
+Performed a 4096 x 4096 matrix multiply in 0.22607 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.484e+08
+Performed a 4096 x 4096 matrix multiply in 0.22220 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.510e+08
+Performed a 4096 x 4096 matrix multiply in 0.23313 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.439e+08
+Performed a 4096 x 4096 matrix multiply in 0.21570 seconds
+Number of floating point operations = 2 * 4096^2 = 33550336
+Flops = 1.555e+08

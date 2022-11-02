@@ -1,0 +1,126 @@
+
+Currently Loaded Modules:
+  1) shared   2) slurm/RT_SLURM/19.05.7   3) DefaultModules   4) gcc/5.5.0
+
+ 
+
+there are 82025 primes under 1048576
+took 86.287070 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 85.863515 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.043603 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.150199 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 85.642803 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 85.927553 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.104729 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 85.693995 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.055776 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 85.988330 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 85.992231 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.140350 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.031422 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.037990 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.075585 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.193909 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.197856 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.056066 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.018372 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 86.112562 seconds with OMP_NUM_THREADS: 1
+
+there are 82025 primes under 1048576
+took 5.818674 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.156902 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.261397 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.172050 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.166896 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.172360 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.155603 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.160194 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.196784 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.314735 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.165639 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.340507 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.172929 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.241594 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.193741 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.169007 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.197465 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.227736 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.195187 seconds with OMP_NUM_THREADS: 32
+
+there are 82025 primes under 1048576
+took 5.227823 seconds with OMP_NUM_THREADS: 32
+
