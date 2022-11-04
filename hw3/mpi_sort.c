@@ -7,12 +7,12 @@
 #define MSIZE 1024
 #define ROOT 0
 
-void shuffle(int *array, long n);
+void shuffle(unsigned int *array, unsigned n);
 int comparison(const void *a, const void *b);
 
-int main(int argc, char *argv[])
+int main(unsigned int argc, char *argv[])
 {
-	long N; // size of array
+	unsigned int N; // size of array
 
 	// initialize MPI and get size/rank
 	int mpi_rank, mpi_size;
@@ -32,7 +32,8 @@ int main(int argc, char *argv[])
 		N = atol(argv[1]);
 	}
 
-	int *arr, *arr_sub;
+	unsigned int *arr;
+	unsigned int *arr_sub;
 	int num_elements_per_proc = N / mpi_size;
 	arr_sub = malloc(sizeof(int) * num_elements_per_proc);
 	double t;
@@ -53,24 +54,29 @@ int main(int argc, char *argv[])
 	}
 
 	MPI_Scatter(
-		arr, num_elements_per_proc, MPI_INT,
-		arr_sub, num_elements_per_proc, MPI_INT,
+		arr, num_elements_per_proc, MPI_UNSIGNED,
+		arr_sub, num_elements_per_proc, MPI_UNSIGNED,
 		ROOT, MPI_COMM_WORLD);
 
 	// sort the array
 	qsort(arr_sub, num_elements_per_proc, sizeof(int), comparison);
 
 	// Test to see how how many rounds there are - rounds should = log2(Processes)
-	int value = mpi_size;
+	int test = mpi_size;
 	int rounds = 1;
-	while (value > 2)
+	while (test > 2)
 	{
-		value = value / 2;
+		test = test / 2;
 		rounds++;
 	}
 
 	// Merge sort - combining the sub matrices
-	int current_round = 0, partner, power_old, power_new, size_of_new_array, size_of_old_array;
+	int current_round = 0;
+	int partner;
+	int power_old;
+	int power_new;
+	unsigned int size_of_new_array;
+	int size_of_old_array;
 	for (int i = 0; i < rounds; i++)
 	{
 		current_round++;
@@ -86,25 +92,22 @@ int main(int argc, char *argv[])
 			arr_rec = malloc(sizeof(int) * size_of_old_array);
 			MPI_Recv(
 				arr_rec, size_of_old_array, MPI_INT, partner,
-				87245, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-			int *arr_merge;
+				1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+			unsigned int *arr_merge;
 			arr_merge = malloc(sizeof(int) * size_of_new_array);
 
-			// for (int j = 0; j < size_of_old_array; j++)
-			// {
-			// 	arr_merge[j] = arr_sub[j];
-			// 	arr_merge[j+size_of_old_array] = arr_rec[j];
-			// }
+			// MERGE AND SORT ARRAYS, adapted from: https://github.com/jkndrkn/erlang-mpi/blob/master/mergesort.c 
 
-			///////////// MERGE AND SORT ARRAYS, adapted from:  ////////////////
-
-			int sub_i, rec_i, merge_i, i;
+			int sub_i;
+			int rec_i;
+			unsigned int merge_i;
+			unsigned int i, k;
 			sub_i = 0;
 			rec_i = 0;
 			merge_i = 0;
 
 			while ((sub_i < size_of_old_array) && (rec_i < size_of_old_array))
-				{
+			{
 				if (arr_sub[sub_i] <= arr_rec[rec_i])
 				{
 					arr_merge[merge_i] = arr_sub[sub_i];
@@ -117,20 +120,21 @@ int main(int argc, char *argv[])
 					merge_i++;
 					rec_i++;
 				}
-				}
-
+			}
+			// if get done sorting arr_sub first, fill the merge array with the remaining values in arr_rec
 			if (sub_i >= size_of_old_array)
-				for (int i = merge_i; i < size_of_new_array; i++, rec_i++)
+				for (i = merge_i; i < size_of_new_array; i++, rec_i++)
 					arr_merge[i] = arr_rec[rec_i];
+			// if get done sorting arr_rec first, fill the merge array with the remaining values in arr_sub
 			else if (rec_i >= size_of_old_array)
-				for (int i = merge_i; i < size_of_new_array; i++, sub_i++)
+				for (i = merge_i; i < size_of_new_array; i++, sub_i++)
 					arr_merge[i] = arr_sub[sub_i];
 
 			free(arr_sub);
 			free(arr_rec);
 			arr_sub = malloc(sizeof(int) * size_of_new_array);
 
-			for (int k = 0; k < size_of_new_array; k++)
+			for (k = 0; k < size_of_new_array; k++)
 				arr_sub[k] = arr_merge[k];
 			free(arr_merge);
 		}
@@ -142,7 +146,7 @@ int main(int argc, char *argv[])
 				arr_send[j] = arr_sub[j];
 			MPI_Send(
 				arr_send, size_of_old_array, MPI_INT, partner,
-				87245, MPI_COMM_WORLD);
+				1, MPI_COMM_WORLD);
 		}
 	}
 	if (mpi_rank == ROOT)
@@ -190,7 +194,7 @@ int main(int argc, char *argv[])
    number generator. */
 
 // From: https://benpfaff.org/writings/clc/shuffle.html
-void shuffle(int *array, long n)
+void shuffle(unsigned int *array, unsigned int n)
 {
 	if (n > 1)
 	{
@@ -209,5 +213,5 @@ void shuffle(int *array, long n)
 // based on: https://www.tutorialspoint.com/c_standard_library/c_function_qsort.htm
 int comparison(const void *a, const void *b)
 {
-	return (*(int *)a - *(int *)b);
+	return (*(unsigned int *)a - *(unsigned int *)b);
 }
